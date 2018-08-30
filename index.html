@@ -13,12 +13,12 @@ var link = document.getElementById('fallback');
 var lang = window.navigator.language;
 if (lang.startsWith('fr')) {
   link.lang = 'fr';
-  link.innerHtml = 'Si la redirection automatique ne fonctionne pas, ' +
+  link.innerHTML = 'Si la redirection automatique ne fonctionne pas, ' +
     'cliquez sur <a href="' + redirectUrl + '">ce lien</a>.';
 }
 else {
   link.lang = 'en';
-  link.innerHtml = 'You will be redirected shortly. If nothing happens, ' +
+  link.innerHTML = 'You will be redirected shortly. If nothing happens, ' +
     'click <a href="' + redirectUrl + '">this link</a>.';
 }
 </script>
