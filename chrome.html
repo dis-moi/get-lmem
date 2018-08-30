@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<script>
+  var redirectUrl = 'https://chrome.google.com/webstore/detail/le-m%C3%AAme-en-mieux/fpjlnlnbacohacebkadbbjebbipcknbg?utm_source=lmem';
+</script>
+
+
+<p id="fallback"></p>
+
+<script>
+location = redirectUrl;
+var link = document.getElementById('fallback');
+var lang = window.navigator.language;
+if (lang.startsWith('fr')) {
+  link.lang = 'fr';
+  link.innerHtml = 'Si la redirection automatique ne fonctionne pas, ' +
+    'cliquez sur <a href="' + redirectUrl + '">ce lien</a>.';
+}
+else {
+  link.lang = 'en';
+  link.innerHtml = 'You will be redirected shortly. If nothing happens, ' +
+    'click <a href="' + redirectUrl + '">this link</a>.';
+}
+</script>
