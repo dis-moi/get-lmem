@@ -9,12 +9,12 @@ var fb = document.getElementById('fallback');
 var lang = window.navigator.language;
 if (lang.startsWith('fr')) {
   fb.lang = 'fr';
-  fb.innerHTML = 'Désolé, impossible de répondre à votre requête. Vous êtes certainement arrivé-e ici par erreur.' +
+  fb.innerHTML = 'Désolé, impossible de répondre à votre requête. Vous êtes certainement arrivé-e ici par erreur. ' +
     'Retournez sur <a href="https://www.lmem.net">Le Même en Mieux</a>.';
 }
 else {
   fb.lang = 'en';
-  fb.innerHTML = 'Sorry, unable to answer your request. You have arrived over here by mistake, don’t you?' +
+  fb.innerHTML = 'Sorry, unable to answer your request. You have arrived over here by mistake, don’t you? ' +
     'Go back to <a href="https://www.lmem.net">Le Même en Mieux</a>.';
 }
 </script>
